@@ -379,4 +379,14 @@
     max-width: 280px;
     gap: 16px;
   }
+  
+  .metrics-grid {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+  }
+  
+  .metric-number {
+    font-size: 3.25rem;
+  }
 }
