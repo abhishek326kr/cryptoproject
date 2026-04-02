@@ -1,9 +1,11 @@
+import type { Metadata } from 'next';
 import { Terminal, Box, Webhook } from 'lucide-react';
 import './developers.css';
+import CTA from '@/components/CTA';
 
-export const metadata = {
-  title: 'Developers | Texnova',
-  description: 'Integrate crypto payments in minutes with our robust SDKs and REST APIs.',
+export const metadata: Metadata = {
+  title: 'Developer API & SDKs | Texnova',
+  description: 'Integrate global crypto payments with just a few lines of code. Read our comprehensive API documentation and explore SDKs.',
 };
 
 export default function Developers() {
