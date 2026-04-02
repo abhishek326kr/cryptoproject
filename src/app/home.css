@@ -74,6 +74,7 @@
 .hero-mockup-wrapper {
   position: relative;
   width: 100%;
+  max-width: 100vw;
   perspective: 1000px;
 }
 
@@ -344,4 +345,38 @@
   .infra-grid { grid-template-columns: 1fr; }
   .infra-large, .infra-wide { grid-column: span 1; }
   .marquee-container::before, .marquee-container::after { width: 50px; }
+  
+  .dashboard-3d {
+    flex-direction: column;
+  }
+  .dash-sidebar {
+    width: 100%;
+    flex-direction: row;
+    height: 60px;
+    padding: 10px 24px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .dash-main {
+    padding: 16px;
+  }
+  .dash-balances {
+    grid-template-columns: 1fr; /* Stack balances on mobile to prevent overflow */
+    gap: 16px;
+  }
+  .dash-card-value {
+    font-size: 1.5rem; /* Shrink giant fonts to fit mobile */
+  }
+  .dash-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    max-width: 280px;
+    gap: 16px;
+  }
 }
