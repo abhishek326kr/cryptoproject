@@ -45,6 +45,12 @@ const jsonLd = {
   description: 'Enterprise crypto payment gateway providing stablecoin settlement, programmatic wallets, and RWA tokenization.'
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -52,13 +58,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      <body>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-      </head>
-      <body>
         <Navbar />
         <main style={{ paddingTop: '80px', minHeight: '100vh' }}>
           {children}
